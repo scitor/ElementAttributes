@@ -2,14 +2,16 @@
 
 ![some examples](ElementAttributes.gif "some examples")
 
-
 This mod changes some attributes of elements, currently
 - `overheat temperature` and
 - `decor` modifier.
 
-- First-time start generates config and opens folder.
-- There are example config entries, remove / modify / add as you desire.
-- set value to `0` to remove attribute entirely from element i.e. `"decor":0`
+**First-time start generates config and opens folder.**  
+There are example config entries, remove / modify / add as you desire.  
+Set a value to `0` to remove attribute entirely from element i.e. `"decor":0`
+
+Config file location:  
+`%USERPROFILE%\Documents\Klei\OxygenNotIncluded\mods\config\ElementAttributes\`
 
 default config.json:
 ```json
