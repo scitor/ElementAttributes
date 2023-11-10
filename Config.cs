@@ -9,7 +9,7 @@ namespace ElementAttributes
     {
         public List<ElementEntry> elements = new List<ElementEntry>();
 
-        public static Config generate()
+        public static Config Generate()
         {
             Config config = new Config();
 
@@ -41,26 +41,25 @@ namespace ElementAttributes
             return config;
         }
 
-        public static string initPath()
+        public static string InitPath()
         {
             string configPath = Path.Combine(Manager.GetDirectory(), "config", "ElementAttributes");
-            if (!Directory.Exists(configPath))
-            {
+            if (!Directory.Exists(configPath)) {
                 Directory.CreateDirectory(configPath);
             }
 
             return Path.Combine(configPath, "config.json");
         }
 
-        public static Config readJson(string configFile)
+        public static Config ReadJson(string configFile)
         {
-            if (!File.Exists(configFile))
-                return null;
-
+            if (!File.Exists(configFile)) {
+                return null; 
+            }
             return JsonConvert.DeserializeObject<Config>(File.ReadAllText(configFile));
         }
 
-        public static void writeJson(string configFile, Config config)
+        public static void WriteJson(string configFile, Config config)
         {
             File.WriteAllText(configFile, JsonConvert.SerializeObject(config, Formatting.Indented,
                 new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })

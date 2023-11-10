@@ -1,8 +1,11 @@
 # Element Attributes
-This mod changes some attributes of elements, currently `overheat temperature` and `decor` modifier.
+This mod changes some attributes of elements, currently
+- `overheat temperature` and
+- `decor` modifier.
 
 - First-time start generates config and opens folder.
-- There are example config entries, remove / modify as you desire.
+- There are example config entries, remove / modify / add as you desire.
+- set value to `0` to remove attribute entirely from element i.e. `"decor":0`
 
 default config.json:
 ```json
@@ -28,5 +31,4 @@ default config.json:
     {"name":"UraniumOre"     ,              "overheat":-20}
   ]
 }
-
 ```
