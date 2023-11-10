@@ -1,4 +1,8 @@
 # Element Attributes
+
+![some examples](ElementAttributes.gif "some examples")
+
+
 This mod changes some attributes of elements, currently
 - `overheat temperature` and
 - `decor` modifier.
